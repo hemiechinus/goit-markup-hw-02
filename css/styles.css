@@ -1,0 +1,145 @@
+:root {
+  --color-link: #2196f3;
+  --color: #212121;
+  --color-text: #757575;
+  --color-banner: #2f303a;
+  --color-w: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.body {
+  width: 1600px;
+  font-family: "Roboto", "Raleway";
+  font-style: normal;
+  color: var(--color);
+  background-color: var(--color-w);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+/*logo*/
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--color-link);
+}
+.link {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/*меню навігації*/
+.social-links .link {
+  color: var(--color);
+}
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--color-link);
+}
+.social-links .link:active {
+  color: red;
+}
+/*контакти*/
+.contact-links {
+  color: var(--color-text);
+}
+.contact-links .link:hover,
+.contact-links .link:focus {
+  color: var(--color-link);
+}
+
+.contact-links .link:active {
+  color: red;
+}
+/*section banner*/
+.button {
+  cursor: pointer;
+  color: var(--color-w);
+  background-color: var(--color-link);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.banner {
+  background-color: var(--color-banner);
+  color: var(--color-w);
+}
+.banner-text {
+  font-weight: 900px;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+/*чому ми і чим займаємось*/
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.title-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.title-work {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/*наша команда*/
+.team {
+  background-color: #f5f4fa;
+  letter-spacing: 0.03em;
+}
+.team > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.team > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team > p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*footer*/
+.footer {
+  background-color: var(--color-banner);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-links {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-links .link:hover,
+.footer-links .link:focus {
+  color: var(--color-link);
+}
+
+.footer-links .link:active {
+  color: red;
+}
