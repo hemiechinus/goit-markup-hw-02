@@ -4,11 +4,11 @@
   --color-text: #757575;
   --color-banner: #2f303a;
   --color-w: #ffffff;
+  --portfolo-button: #f5f4fa;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 .body {
   width: 1600px;
@@ -27,6 +27,9 @@ a {
 address {
   font-style: normal;
 }
+.header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /*logo*/
 .logo {
   font-family: "Raleway";
@@ -38,7 +41,7 @@ address {
   color: var(--color-link);
 }
 .link {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -81,11 +84,27 @@ address {
   color: var(--color-w);
 }
 .banner-text {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+/* buttons portfolio*/
+.buttons {
+  cursor: pointer;
+  background-color: var(--portfolo-button);
+  color: var(--color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--color-link);
+  color: var(--color-w);
+}
+/*portfolio*/
 /*чому ми і чим займаємось*/
 .title {
   font-weight: bold;
@@ -142,4 +161,24 @@ address {
 
 .footer-links .link:active {
   color: red;
+}
+/*portfolio main*/
+.examples > li {
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+.title-examples {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.text-examples {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+.text-ex {
+  border: 1px solid #000000;
 }
