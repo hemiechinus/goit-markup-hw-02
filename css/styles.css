@@ -27,9 +27,6 @@ a {
 address {
   font-style: normal;
 }
-.header {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 /*logo*/
 .logo {
   font-family: "Raleway";
@@ -46,34 +43,31 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/*меню навігації*/
-.social-links .link {
-  color: var(--color);
-}
-.social-links .link:hover,
-.social-links .link:focus {
-  color: var(--color-link);
-}
-.social-links .link:active {
-  color: red;
-}
-/*контакти*/
-.contact-links {
+.links {
   color: var(--color-text);
 }
-.contact-links .link:hover,
-.contact-links .link:focus {
+/*меню навігації*/
+
+.link:hover,
+.link:focus {
   color: var(--color-link);
 }
-
-.contact-links .link:active {
+.link:active {
   color: red;
 }
+.links {
+  color: var(--color-text);
+}
+/*контакти*/ /* колі посилань
+.contact-links {
+  color: var(--color-text); 
+}*/
 /*section banner*/
 .button {
   cursor: pointer;
   color: var(--color-w);
   background-color: var(--color-link);
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -84,6 +78,7 @@ address {
   color: var(--color-w);
 }
 .banner-text {
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -94,6 +89,7 @@ address {
   cursor: pointer;
   background-color: var(--portfolo-button);
   color: var(--color);
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -107,6 +103,7 @@ address {
 /*portfolio*/
 /*чому ми і чим займаємось*/
 .title {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -126,7 +123,7 @@ address {
 }
 /*наша команда*/
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--portfolo-button);
   letter-spacing: 0.03em;
 }
 .team > h2 {
@@ -146,22 +143,15 @@ address {
 /*footer*/
 .footer {
   background-color: var(--color-banner);
-  color: #ffffff;
+  color: var(--color-w);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-links {
+.lin {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-links .link:hover,
-.footer-links .link:focus {
-  color: var(--color-link);
-}
 
-.footer-links .link:active {
-  color: red;
-}
 /*portfolio main*/
 .examples > li {
   width: 370px;
